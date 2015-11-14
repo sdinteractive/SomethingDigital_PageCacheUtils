@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SomethingDigital_PageCacheUtils>
+             <active>true</active>
+             <codePool>community</codePool>
+             <depends>
+                 <Enterprise_PageCache />
+             </depends>
+        </SomethingDigital_PageCacheUtils>
+    </modules>
+</config>

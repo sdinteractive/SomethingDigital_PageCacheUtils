@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <placeholders>
+        <sd_pagecacheutils_nocache>
+            <block>sd_pagecacheutils/nocache</block>
+            <placeholder>SD_FPCNOCACHE</placeholder>
+            <container>SomethingDigital_PageCacheUtils_Model_Container_Standard</container>
+            <cache_lifetime>none</cache_lifetime>
+        </sd_pagecacheutils_nocache>
+
+        <sd_pagecacheutils_volatile>
+            <block>sd_pagecacheutils/volatile</block>
+            <placeholder>SD_FPCVOLATILE</placeholder>
+            <container>SomethingDigital_PageCacheUtils_Model_Container_Standard</container>
+            <cache_lifetime>1m</cache_lifetime>
+        </sd_pagecacheutils_volatile>
+
+        <sd_pagecacheutils_customer>
+            <block>sd_pagecacheutils/customer</block>
+            <placeholder>SD_FPCCUSTOMER</placeholder>
+            <container>SomethingDigital_PageCacheUtils_Model_Container_Customer</container>
+            <cache_lifetime>1d</cache_lifetime>
+        </sd_pagecacheutils_customer>
+
+        <sd_pagecacheutils_guest>
+            <block>sd_pagecacheutils/guest</block>
+            <placeholder>SD_FPCGUEST</placeholder>
+            <container>SomethingDigital_PageCacheUtils_Model_Container_Guest</container>
+            <cache_lifetime>1d</cache_lifetime>
+        </sd_pagecacheutils_guest>
+    </placeholders>
+</config>
