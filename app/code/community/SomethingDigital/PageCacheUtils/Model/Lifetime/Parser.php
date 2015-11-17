@@ -22,7 +22,7 @@ class SomethingDigital_PageCacheUtils_Model_Lifetime_Parser
 
     protected function setString($string)
     {
-        $this->string = $string;
+        $this->string = (string)$string;
         $this->len = strlen($string);
     }
 
