@@ -14,7 +14,9 @@ class SomethingDigital_PageCacheUtils_Model_Container_Standard extends Enterpris
 
     protected function _renderBlock()
     {
-        return $this->_getPlaceHolderBlock()->toHtml();
+        $block = $this->_getPlaceHolderBlock();
+        Mage::dispatchEvent('render_block', array('block' => $block, 'placeholder' => $this->_placeholder));
+        return $block->toHtml();
     }
 
     protected function _getIdentifier()
