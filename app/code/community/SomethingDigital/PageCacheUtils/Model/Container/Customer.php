@@ -20,6 +20,12 @@ class SomethingDigital_PageCacheUtils_Model_Container_Customer extends Something
         // Let's add a tag for quick and easy clean convenience.
         $customer = Mage::getSingleton('customer/session')->getCustomer();
         if ($customer->getId()) {
+            // Let's add the customer's model tags also, so updating the customer flushes.
+            $modelTags = $customer->getCacheIdTags();
+            if ($modelTags) {
+                $tags = array_merge($tags, $modelTags);
+            }
+
             $tags[] = $this->getCacheCustomerTag($customer);
         }
         return parent::_saveCache($data, $id, $tags, $lifetime);
