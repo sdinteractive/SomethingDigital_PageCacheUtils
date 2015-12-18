@@ -19,6 +19,9 @@ You can replace core/template with one of:
    same for all non-customer (guest) users.  Great for blocks
    common to multiple pages.
 
+ * `sd_pagecacheutils/cart`<br />
+   A block that differs by cart, but may otherwise be cached.
+
  * `sd_pagecacheutils/guest`<br />
    Data that can only be cached for guest (non-customer) users.
 
